@@ -1,5 +1,4 @@
 **Följ dessa** guidelines så kommer vi inte stöta på problem.
-Jag (Emil M) är git-general så vid troubles, send me a message.
 
 *"Master är helig jord som testarna ska testa och ska innehålla så fungerande kod som möjligt. En feature är inte klar om den inte gjorts en merge till master. Alltså behöver ni göra det minst en gång per feature i varje sprint."*
 
