@@ -1,0 +1,111 @@
+Matlevererings web-app (Likt onlinepizza)
+
+Tekniker
+	Asp.Net Core Projekt - MVC
+	Databas - SQL Server
+	ORM - Entity Framework
+	Frontend - React
+
+Features - Kund
+	Välja en restaurang
+	Visa restaurangens meny
+	Komponera sin egen pizza
+	Skapa en beställning
+	Betala genom PayPal
+	Orderbekräftelse
+	Ratea restaurang
+
+Features - Restaurang
+	Skapa sin restaurang
+	Skapa sin meny / Edita den
+	Sätta pris per delivery-km
+	Ratea Kund
+
+
+WEB-APPENS STARTSIDA
+Välja en restaurang
+	- Se alla restaurangen i en lista, filtrera listan med sök / zipcode
+	- Se alla pizzor i en lista, välja pizzor till en "kundvagn"isch
+	- Logga in som antingen Kund / Restaurang
+	- Skapa konto som kund / Restaurang
+
+KUNDENS PERSPEKTIV
+Visa restaurangens meny
+	- Ändra detaljer per vald pizza
+
+Skapa en beställning
+	- Kräva inlogg
+	- Ta alla pizzor i kundvagnen och ange leveransaddress, se totalsumma och beräknad tid
+	- Betala med paypals sandbox Api
+
+Orderbekräftelse	
+	- Timer som tickar ner från beräknad tid
+	- Sidebar som låter en ratea restaurangen från 1 - 5 stjärnor
+
+
+RESTAURANGENS PERSPEKTIV
+Skapa sin restaurang
+	- Fylla i en form med data angående sin restaurang
+
+Skapa sin meny
+	- Lista man kan trycka "Lägg till pizza" på och få upp en popup-form där man fyller i, sen läggs den i listan
+	- Spara knapp
+
+Sätta priser
+	- En slider som säger vad varje delivery-km ska kosta
+
+Ratea Kund
+	- Vid varje lagd delivery på restaurangen får läggs kunden in i en lista som dom sen kan ratea
+
+
+
+1 Skapa projekt (Done)
+	1.1 Lägga till EF och Dependencies (1.5 h)
+
+2 Skapa databas (Alex)
+	2.1 Skapa Db-modell och relationer (14h)
+	2.2 Migratea databasen (--)
+	2.3 Seed metod (3h)
+
+3 Implementera Identity / Authentication (18h) (Emil Martini)
+	3.1 Validation
+
+4 Skapa web-appens startsida (Emil Penson)
+	4.0 Skapa vyn (4h)
+	4.1 Filtreringslista med alla pizzerior (--)
+	4.1.1 Val för användare att betygsätta pizzor (3h)
+	4.2 Login-form (6h)
+	4.3 Registrerings-form (--)
+	4.4 Lägg till pizzor i kundvagn (Editera) (16h)
+
+5 Skapa restaurangsfunktionerna
+	5.0 Skapa vyn (18h)
+	5.1 Form för att skapa sin restaurang (--)
+	5.2 Val för att lägga till pizzor (--)
+	5.3 Meny för möjliga ingredienser på varje pizza (3h)
+	5.4 Ratea kunden sidebar, lista med kunder som beställt från sin pizzeria (4h)
+
+6 Skapa kundfunktionerna
+	6.1 Se beställningar (2.5h)	
+	6.2 Se stats på samlad data kring sina beställningar (Google Charts) (5h per feature)
+		- Charts för beställda pizzor
+		- Charts för summa lagd på pizzor
+		- Charts för kalorier
+		- Charts för vilken dag man beställer oftast
+		- Charts för ens rating från restauranger
+
+		https://developers.google.com/chart
+
+7 Skapa betalsystem (16h)
+	7.1 Implementera Paypal (sandbox)
+
+	https://developer.paypal.com/docs/api/overview/
+
+8 Bokningsbekräftelse
+	8.0 Skapa vyn (3h)
+	8.1 Timer som räknar ner (--)
+	8.2 När timer går till 0, redirecta till homepage (--)
+	8.3 Ratea restaurang (3.5h)
+
+Total tid 140.5h
+Tid per utvecklare 47h
