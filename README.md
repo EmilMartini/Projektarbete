@@ -22,3 +22,13 @@ Om du hittar buggar på steg 8:
 4. Fixa eventuella merge-conflicts
 5. Fixa buggarna, committa och pusha till din branch
 6. Starta om hela checklistan. Inklusive steg 3 och steg 8!
+
+Definition of done!
+1.    Alla sub-tasks Done
+2.    Written down what user story is supposed to demonstrate
+3.    Commit-message inlcudes "Jira Issue ID"
+4.    Code follows convention decided upon
+5.    Automated testcase implemented for 1 happy-path testcase
+6.    No known bugs
+7.    Merged to master
+8.    Code review
